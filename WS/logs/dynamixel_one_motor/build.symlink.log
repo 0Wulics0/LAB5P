@@ -1,0 +1,6 @@
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/lib/pkgconfig/dynamixel_one_motor.pc
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/lib/dynamixel_one_motor/jointSrv.py
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/lib/dynamixel_one_motor/jointSub.py
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/lib/dynamixel_one_motor/cmake.lock
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/share/dynamixel_one_motor/cmake/dynamixel_one_motorConfig-version.cmake
+Symlinking /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/share/dynamixel_one_motor/cmake/dynamixel_one_motorConfig.cmake

@@ -1,0 +1,6 @@
+devel_space: /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel
+install: false
+install_space: /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/install
+profile: default
+source_space: /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/src
+workspace: /home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS

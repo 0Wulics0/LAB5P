@@ -1,0 +1,1 @@
+/home/wulics/Documents/Robotica2022-2S/LAB5Robotica/WS/devel/.private/dynamixel_one_motor/share/dynamixel_one_motor/cmake/dynamixel_one_motorConfig.cmake
