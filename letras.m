@@ -1,8 +1,10 @@
-function [Y] = letras(msg,sub,cliente,Robot,l, expo)
+function letras(msg,sub,cliente,Robot,l, expo)
 
 if(expo == 1)
     movePX(msg,cliente,0, true);
     a=sub.LatestMessage.Position;
+    a(5)=[];
+    a=Robot.fkine(a);
     %a
     a1=transl(0,0,0)*a;
     a2=transl(0,10,0)*a1;
@@ -39,6 +41,8 @@ if(expo == 1)
     %    end
     end
 else
+    Alerta = 'El sistema no tiene marcador';
+    disp(Alerta)
 end
 end
 
