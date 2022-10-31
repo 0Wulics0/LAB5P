@@ -4,12 +4,9 @@ rosinit;
 clear;
 clf("reset")
 
-cliente = rossvcclient('/dynamixel_workbench/dynamixel_command'); %Creación de cliente de pose y posición
-% msg = rosmessage(cliente); %Creación de mensaje
-% 
-% msg.AddrName = "Torque_Limit";
+cliente = rossvcclient('/dynamixel_workbench/dynamixel_command');
 msg = rosmessage(cliente); %Creación de mensaje
-
+% 
 Sub=rossubscriber('/dynamixel_workbench/joint_states');
 
 
