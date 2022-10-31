@@ -4,10 +4,10 @@ rosinit;
 clear;
 clf("reset")
 
-cliente = rossvcclient('/dynamixel_workbench/dynamixel_command');
-msg = rosmessage(cliente); %Creación de mensaje
+%cliente = rossvcclient('/dynamixel_workbench/dynamixel_command');
+%msg = rosmessage(cliente); %Creación de mensaje
 % 
-Sub=rossubscriber('/dynamixel_workbench/joint_states');
+%Sub=rossubscriber('/dynamixel_workbench/joint_states');
 
 
 l = [13.27 10.3 10.3 6.57]; % Longitudes eslabones

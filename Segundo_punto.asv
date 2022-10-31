@@ -4,12 +4,8 @@ rosinit;
 clear;
 clf("reset")
 
-cliente = rossvcclient('/dynamixel_workbench/dynamixel_command'); %Creación de cliente de pose y posición
-% msg = rosmessage(cliente); %Creación de mensaje
+%msg = rosmessage(cliente); %Creación de mensaje
 % 
-% msg.AddrName = "Torque_Limit";
-msg = rosmessage(cliente); %Creación de mensaje
-
 Sub=rossubscriber('/dynamixel_workbench/joint_states');
 
 
@@ -33,4 +29,5 @@ Robot.tool = [0 0 1 0;
 [expo,z]=marcador(msg,Sub,cliente,Robot,l);
 lineasParalelas(msg,Sub,cliente,Robot,l,expo,z);
 letras(msg,Sub,cliente,Robot,l, expo);
-circulo(msg,sub,cliente,Robot,l,zabajo)
+zabajo = -10
+circulo(msg,Sub,cliente,Robot,l,zabajo);

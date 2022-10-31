@@ -14,22 +14,12 @@ z=a1(3,4);
 n=20;
 
 Mov = cat(3,  ctraj(a,a0,n),ctraj(a0,a1,n),ctraj(a1,a2,n));
-% for i=1:1*n*3
-%    thetas = InverseKinematics(Robot,l,Mov(:,:,i));
-%    movePX(msg,cliente,thetas, false);
-% %    Robot.plot(thetas(2,:),'notiles','noname') %    hold on; %
-% trplot(eye(4),'rgb','arrow','length',25,'frame','or') %    hold on %
-% plot3(Mov(1,4,i),Mov(2,4,i),Mov(3,4,i),'ro') %    hold on; end
 move(Mov,Robot,l,msg,cliente);
 movePX(msg,cliente,-1.42, true);
+
 Mov = cat(3,  ctraj(a2,a1,n));
-% for i=1:1*n
-%    thetas = InverseKinematics(Robot,l,Mov(:,:,i));
-%    movePX(msg,cliente,thetas, false);
-% %    Robot.plot(thetas(2,:),'notiles','noname') %    hold on; %
-% trplot(eye(4),'rgb','arrow','length',25,'frame','or') %    hold on %
-% plot3(Mov(1,4,i),Mov(2,4,i),Mov(3,4,i),'ro') %    hold on; end
 move(Mov,Robot,l,msg,cliente);
 movePX(msg,cliente,-1.72, true);
+
 expo=1;
 end
