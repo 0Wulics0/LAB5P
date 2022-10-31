@@ -33,5 +33,4 @@ Robot.tool = [0 0 1 0;
 [expo,z]=marcador(msg,Sub,cliente,Robot,l);
 lineasParalelas(msg,Sub,cliente,Robot,l,expo,z);
 letras(msg,Sub,cliente,Robot,l, expo);
-zabajo = -10
-circulo(msg,Sub,cliente,Robot,l,zabajo);
+circulo(msg,sub,cliente,Robot,l,zabajo)

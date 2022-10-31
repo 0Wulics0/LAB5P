@@ -18,44 +18,28 @@ function lineasParalelas(msg,sub,cliente,Robot,l, expo,z)
         a9=transl(2,0,0)*a8;
         a10=transl(0,0,3)*a9;
         
-        n=20;
-        n0=15;
-        
+        n0=10;
         MovApr = cat(3, ctraj(a, a0, n0));
+        move(MovApr,Robot,l,msg,cliente);
         
-        for i=1:n0*1
-           thetas = InverseKinematics(Robot,l,MovApr(:,:,i));
-           movePX(msg,cliente,thetas, false);
-           Robot.plot(thetas(2,:),'notiles','noname')
-           hold on;
-           trplot(eye(4),'rgb','arrow','length',25,'frame','or')
-           hold on
-           plot3(MovApr(1,4,i),MovApr(2,4,i),MovApr(3,4,i),'ro')
-           hold on;
-
-        %    if mod(i,n) == 0
-        %        movePX(msg,cliente,o_gripper(i/n), true);
-        %        pause(1);
-        %    end
-        end
+        n=20;
+        MovAcerca = cat(3,  ctraj(a0,a00,n));
+        move(MovAcerca, Robot,l, msg, cliente);
         
-        Mov = cat(3,  ctraj(a0,a00,n),ctraj(a00,a1,n),ctraj(a1,a2,n),ctraj(a2,a3,n),ctraj(a3,a4,n), ctraj(a4,a5,n), ctraj(a5,a6,n), ctraj(a6,a7,n), ctraj(a7,a8,n), ctraj(a8,a9,n), ctraj(a9,a10, n),ctraj(a10,a,n) );
+        MovLinea1 = cat(3, ctraj(a00,a1,n0),ctraj(a1,a2,n0),ctraj(a2,a3,10));
+        move(MovLinea1,Robot,l,msg,cliente);
         
-        for i=1:n*12
-           thetas = InverseKinematics(Robot,l,Mov(:,:,i));
-           movePX(msg,cliente,thetas, false);
-           Robot.plot(thetas(2,:),'notiles','noname')
-           hold on;
-           trplot(eye(4),'rgb','arrow','length',25,'frame','or')
-           hold on
-           plot3(Mov(1,4,i),Mov(2,4,i),Mov(3,4,i),'ro')
-           hold on;
-
-        %    if mod(i,n) == 0
-        %        movePX(msg,cliente,o_gripper(i/n), true);
-        %        pause(1);
-        %    end
-        end
+        MoveAcercarZ2 = cat(3,ctraj(a3,a4,n));
+        move(MoveAcercarZ2,Robot,l,msg,cliente);
+        
+        MovLinea2 = cat(3, ctraj(a4,a5,n0),ctraj(a5,a6,n0),ctraj(a6,a7,10));
+        move(MovLinea2,Robot,l,msg,cliente);
+        
+        MoveAcercarZ3 = cat(3,ctraj(a7,a8,n));
+        move(MoveAcercarZ3,Robot,l,msg,cliente);
+        
+        MovLinea3 = cat(3, ctraj(a8,a9,n0),ctraj(a9,a10,n0));
+        move(MovLinea3,Robot,l,msg,cliente);        
     else
         Alerta = 'El sistema no tiene marcador';
         disp(Alerta)
