@@ -7,7 +7,7 @@ function movePX(msg,cliente,thetas,mov_gripper)
         call(cliente,msg);
     else
         msg.AddrName = "Goal_Position";
-        pause(0.4);
+        %pause(0.1);
         q = rad2deg(thetas(2,:));
     %     q(5) = o_gripper;
     for i=4:-1:1

@@ -1,4 +1,4 @@
-function lineasParalelas(msg,sub,cliente,Robot,l, expo,z)
+function lineasParalelas(msg,sub,cliente,Robot,l, expo)
     if(expo == 1)
         a=sub.LatestMessage.Position;
         a(5)=[];

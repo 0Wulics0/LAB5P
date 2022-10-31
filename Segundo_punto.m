@@ -4,10 +4,9 @@ rosinit;
 clear;
 clf("reset")
 
-%cliente = rossvcclient('/dynamixel_workbench/dynamixel_command');
-%msg = rosmessage(cliente); %Creación de mensaje
-% 
-%Sub=rossubscriber('/dynamixel_workbench/joint_states');
+cliente = rossvcclient('/dynamixel_workbench/dynamixel_command');
+msg = rosmessage(cliente); %Creación de mensaje
+Sub=rossubscriber('/dynamixel_workbench/joint_states');
 
 
 l = [13.27 10.3 10.3 6.57]; % Longitudes eslabones
@@ -25,10 +24,11 @@ Robot.tool = [0 0 1 0;
               1 0 0 0;
               0 1 0 0;
               0 0 0 1];
-  
+expo=0;
 
-[expo,z]=marcador(msg,Sub,cliente,Robot,l);
-lineasParalelas(msg,Sub,cliente,Robot,l,expo,z);
+[expo,z]=marcador(msg,Sub,cliente,Robot,l,expo);
+circulo(msg,Sub,cliente,Robot,l);
+dibujoLibre(msg,Sub,cliente,Robot,l);
+lineasParalelas(msg,Sub,cliente,Robot,l,expo);
 letras(msg,Sub,cliente,Robot,l, expo);
-zabajo = -10
 circulo(msg,Sub,cliente,Robot,l,zabajo);

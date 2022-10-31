@@ -1,25 +1,30 @@
-function circulo(msg,sub,cliente,Robot,l)
-a=sub.LatestMessage.Position;
+function dibujoLibre(msg,sub,cliente,Robot,l)
+
+a=Sub.LatestMessage.Position;
 a(5)=[];
 a=Robot.fkine(a);
-a2=Robot.fkine([0.0358,1.1965,1.5186,-1.1403]);%cambiar por posicion sobre el tablero
+a2=Robot.fkine([0.7159,1.3141,1.2323,-1.0431]);%cambiar por posicion sobre el tablero
 a1=transl(0,0,10)*a2;
-% a = a1;
-% a0=a;
-% a0(3,4)=a1(3,4);
+a = a1;
+a0=a;
+a0(3,4)=a1(3,4);
 n=20;
-Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n));
+Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n))
 
-    r = 3;
-    step = 0.1;
-    y1=-r:step:r;
-    y2 = r:-step:-r;
-    y = [y1,y2];
-    x1 = sqrt(r^2-y1.^2);
-    x2 = -x1;
-    x = [x1, x2];
-    nf = 20;
-    n =40;
+%HACER LINEAS RECTA DEL INICIO
+    I0 =     Mov(:,:,end);
+    I1 = transl(1,-1,0)*Mov(:,:,end);
+    Mov = cat(3,Mov,ctraj(I0,I1,n));
+
+
+    r = 2;
+    step = 0.1
+    y1=-r:step:r*0.1
+    th = -pi/2:0.1:pi/2
+    y = r.*sin(th)
+    %y = [y1]
+    x = r.*cos(th)%sqrt(r^2-y1.^2)
+    n =20
    
     current=Mov(:,:,end);
    
@@ -35,12 +40,20 @@ Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n));
         current = next;
     end
    
-    %subir = transl(0,0,-zabajo)*current;
-    trajSubir = ctraj(current,a1,n)
-    Mov = cat(3,Mov,trajSubir);
-    move(Mov,Robot,l,msg,cliente)
    
-    %PLOTEAR----------------------------------------
+    I0 =     Mov(:,:,end);
+    I1 = transl(-1,-1,0)*Mov(:,:,end);
+    Mov = cat(3,Mov,ctraj(I0,I1,n));
+   
+
+
+    current = Mov(:,:,end);
+    subir = transl(0,0,10)*current;
+    trajSubir = ctraj(current,subir,n)
+    Mov = cat(3,Mov,trajSubir,ctraj(subir, a,n));
+   
+    move(Mov,Robot,l,msg,cliente);
+   
 %     sz = size(Mov)
 % for i=1:sz(3)
 %    thetas = InverseKinematics(Robot,l,Mov(:,:,i));
@@ -57,5 +70,4 @@ Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n));
 % %        pause(1);
 % %    end
 % end
-   
 end
