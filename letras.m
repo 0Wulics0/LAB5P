@@ -5,10 +5,10 @@ if(expo == 1)
     a(5)=[];
     a=Robot.fkine(a);
     %a
-    a00=Robot.fkine([0.8386,1.3090,1.3346,-1.0278]);
+    a00=Robot.fkine([-0.6545,1.1403,1.6874,-1.2118]);
 %   a00(3,4)=z;
     a0=transl(0,0,2)*a00;
-    a2=transl(0,2,0)*a0;
+    a2=transl(0,2,0)*a00;
     a3=transl(2,0,0)*a2; 
     a4=transl(0,-2,0)*a3; 
     a5=transl(0,0,2)*a4;

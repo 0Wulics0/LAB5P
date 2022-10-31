@@ -27,7 +27,7 @@ Robot.tool = [0 0 1 0;
 expo=0;
 
 [expo,z]=marcador(msg,Sub,cliente,Robot,l,expo);
-circulo(msg,Sub,cliente,Robot,l);
+circulo(msg,Sub,cliente,Robot,l,expo);
 dibujoLibre(msg,Sub,cliente,Robot,l);
 lineasParalelas(msg,Sub,cliente,Robot,l,expo);
 letras(msg,Sub,cliente,Robot,l, expo);

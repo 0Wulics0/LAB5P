@@ -1,4 +1,5 @@
-function circulo(msg,sub,cliente,Robot,l)
+function circulo(msg,sub,cliente,Robot,l,expo)
+if (expo==1)
 a=sub.LatestMessage.Position;
 a(5)=[];
 a=Robot.fkine(a);
@@ -57,5 +58,6 @@ Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n));
 % %        pause(1);
 % %    end
 % end
-   
+else
+    disp("El sistema no tiene marcador")
 end
