@@ -36,10 +36,13 @@ Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n));
         current = next;
     end
    
-    %subir = transl(0,0,-zabajo)*current;
-    trajSubir = ctraj(current,a1,n)
-    Mov = cat(3,Mov,trajSubir);
-    move(Mov,Robot,l,msg,cliente)
+    current = Mov(:,:,end);
+    subir = transl(0,0,10)*current;
+    trajSubir = ctraj(current,subir,n);
+    Mov = cat(3,Mov,trajSubir,ctraj(subir, a,n));
+    
+    move(Mov,Robot,l,msg,cliente);
+
    
     %PLOTEAR----------------------------------------
 %     sz = size(Mov)

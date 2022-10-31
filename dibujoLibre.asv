@@ -1,13 +1,13 @@
-function dibujoLibre(msg,sub,cliente,Robot,l)
-
-a=Sub.LatestMessage.Position;
+function dibujoLibre(msg,sub,cliente,Robot,l,expo)
+if (expo==1)
+a=sub.LatestMessage.Position;
 a(5)=[];
 a=Robot.fkine(a);
 a2=Robot.fkine([0.7159,1.3141,1.2323,-1.0431]);%cambiar por posicion sobre el tablero
 a1=transl(0,0,10)*a2;
-a = a1;
-a0=a;
-a0(3,4)=a1(3,4);
+% a = a1;
+% a0=a;
+% a0(3,4)=a1(3,4);
 n=20;
 Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n))
 
@@ -70,4 +70,6 @@ Mov = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n))
 % %        pause(1);
 % %    end
 % end
+else
+    disp("El sistema no tiene marcador")
 end

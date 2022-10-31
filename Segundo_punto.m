@@ -26,9 +26,20 @@ Robot.tool = [0 0 1 0;
               0 0 0 1];
 expo=0;
 
+while(true)
+metodo=input("Ingrese el método deseado \n",'s')
+switch metodo
+    case 'm'
 [expo,z]=marcador(msg,Sub,cliente,Robot,l,expo);
+    case 'c'
 circulo(msg,Sub,cliente,Robot,l,expo);
-dibujoLibre(msg,Sub,cliente,Robot,l);
+    case 'l'
 lineasParalelas(msg,Sub,cliente,Robot,l,expo);
+    case 'curv'
+dibujoLibre(msg,Sub,cliente,Robot,l);
+    case 'let'
 letras(msg,Sub,cliente,Robot,l, expo);
-circulo(msg,Sub,cliente,Robot,l,zabajo);
+    case 'p'
+end
+end
+
