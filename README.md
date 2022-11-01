@@ -143,21 +143,19 @@ letras(msg,Sub,cliente,Robot,l, expo);
 end
 end
 ```
-
-### Ejemplos de funcionamiento
-
-### Verificacion dimensional
+### Verificacion dimensional y Ejemplos de funcionamiento
 Circulo:
+
 ![imagen](https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png)
 
 Dibujo libre:
+
 https://vimeo.com/766188835
 https://vimeo.com/765787944/217f9d7aa3
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199278992-221b0d9d-c376-41e2-a818-15a14539d1af.png)
-
 ![imagen](https://user-images.githubusercontent.com/37639887/199278696-05ff639b-c6fc-45bf-875b-76047331ebe2.png)
 
 5 puntos equidistantes:
@@ -173,6 +171,7 @@ https://youtu.be/AzzmrknuZgA
 ![imagen](https://user-images.githubusercontent.com/37639887/199311543-c28bedf7-407c-419f-bd75-0581c7428adc.png)
 
 Letras:
+
 https://vimeo.com/766188835
 
 Calidad del trazo:
