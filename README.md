@@ -189,5 +189,12 @@ Radio:
 
 Homogeneidad de todos los trazos:
 
+### Conclusiones
+
+Ros, junto a modelos de cinematica inversa y directa, permite controlar los movimientos de un robot por medio de python y/o Matlab con suficiente precision como para recorrer trayectorias complejas.
+
+Matlab facilita la manipulacion del robot por medio de permitir el envio de comandos en ROS, creacion de trayectorias y simulacion de movimientos del robot dentro de su lenguaje. Esto hace que no requiramos al robot para verificar que la trayectoria programada sera correctamente ejecutada y tambien disminuye el riesgo que representa probar un programa ciegamente en el robot, pues este puede hacer ocasionar que realice movimientos bruscos y se dane.
+
+La precision con la que el robot se comporte a comparacion del comportamiento simulado ideal depende de factores fisicos del robot, como la rigidez de sus eslabones, las fuerzas externas asociadas al proceso y la interfaz que lo controla (esto ultimo respecto al envio de valores de articulacion discontinuo desde Matlab). Esta precisision determina la calidad con la que lleva a cabo su funcion, pues como se evidencio, la desviacion entre trayectorias ideales y reales puede ser significativa.
 
 
