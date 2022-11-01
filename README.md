@@ -147,14 +147,40 @@ end
 ### Ejemplos de funcionamiento
 
 ### Verificacion dimensional
+Circulo:
 ![imagen](https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png)
+
+Dibujo libre:
+https://vimeo.com/766188835
+https://vimeo.com/765787944/217f9d7aa3
+
+![imagen](https://user-images.githubusercontent.com/37639887/199278992-221b0d9d-c376-41e2-a818-15a14539d1af.png)
+
+![imagen](https://user-images.githubusercontent.com/37639887/199278696-05ff639b-c6fc-45bf-875b-76047331ebe2.png)
+
+5 puntos equidistantes:
+
+https://vimeo.com/766193604/0d1a37a9da
+
+![imagen](https://user-images.githubusercontent.com/37639887/199302975-d9df2527-5c06-4a43-abc4-1566efbe6d49.png)
+
+Triangulo:
+
+https://youtu.be/AzzmrknuZgA
+
+![imagen](https://user-images.githubusercontent.com/37639887/199311543-c28bedf7-407c-419f-bd75-0581c7428adc.png)
+
+Letras:
+https://vimeo.com/766188835
+
 Calidad del trazo:
 La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientacion respecto al piso.
-Rectitud ():
 
+Rectitud (curvatura):
 Se habla de curvatura en vez de rectitud por ser un circulo. Se obseva que la curvatura no es constante. En particular se observa que hay menor calidad de la curvatura cuando la distancia entre puntos a moverse disminuye. Esta disminucion de calidad se ve como trazos poco uniformes con irregularidades puntiagudas y mayor desviacion general respecto a la curvatura solicitada. La razon de que sean mas erraticos es que hay mas paradas cuando los puntos sobre la trayecotria estan mas cerca, y a cada parada se genera un pico. Como la trayectoria tiene menos puntos en otros costados del circulo, la trayectoria tiene menos paradas y por lo tanto el trazo es mas uniforme. A parte de esto, la fuerza transversal ejercida sobre el marcador es mayor y esto hace que en cada moviemiento el marcador se pueda vencer la fuerza de friccion estatica con el tablero. Por esto es mas frecuente que el marcador no se mueva cuando los trazos son cortos.
+
 Radio:
 Homogeneidad de todos los trazos:
 
