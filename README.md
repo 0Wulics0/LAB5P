@@ -145,13 +145,26 @@ end
 ```
 %### Verificacion dimensional y Ejemplos de funcionamiento
 ### Resultados
-Circulo:
+
+#### Cojer marcador
+
+
+
+#### Dejar marcador
+
+
+
+#### Area de trabajo - Arcos
+
+
+
+#### Circulo:
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png)
 
-Dibujo libre:
+#### Dibujo libre:
 
 https://vimeo.com/766188835
 https://vimeo.com/765787944/217f9d7aa3
@@ -159,23 +172,27 @@ https://vimeo.com/765787944/217f9d7aa3
 ![imagen](https://user-images.githubusercontent.com/37639887/199278992-221b0d9d-c376-41e2-a818-15a14539d1af.png)
 ![imagen](https://user-images.githubusercontent.com/37639887/199278696-05ff639b-c6fc-45bf-875b-76047331ebe2.png)
 
-5 puntos equidistantes:
+#### 5 puntos equidistantes:
 
 https://vimeo.com/766193604/0d1a37a9da
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199302975-d9df2527-5c06-4a43-abc4-1566efbe6d49.png)
 
-Triangulo:
+#### Triangulo:
 
 https://youtu.be/AzzmrknuZgA
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199311543-c28bedf7-407c-419f-bd75-0581c7428adc.png)
 
-Letras:
+#### Letras:
 
 https://vimeo.com/766188835
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png)
+
+#### 3 Lineas rectas
+
+![imagen](https://user-images.githubusercontent.com/37639887/199322486-c721b2a7-8bcd-4959-89ab-e88b62b7d48c.png)
 
 ### Verificacion y analisis dimensional
 
