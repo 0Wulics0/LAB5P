@@ -145,3 +145,15 @@ end
 ```
 
 ### Ejemplos de funcionamiento
+
+### Verificacion dimensional
+![imagen](https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png)
+![imagen](https://user-images.githubusercontent.com/37639887/199258182-12a781d4-725e-4374-8c98-09aee05d28eb.png)
+![imagen](https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png)
+Calidad del trazo:
+La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientacion respecto al piso.
+Rectitud ():
+Se habla de curvatura en vez de rectitud por ser un circulo. Se obseva que la curvatura no es constante. En particular se observa que hay menor calidad de la curvatura cuando la distancia entre puntos a moverse disminuye. Esta disminucion de calidad se ve como trazos poco uniformes con irregularidades puntiagudas y mayor desviacion general respecto a la curvatura solicitada. La razon de que sean mas erraticos es que hay mas paradas cuando los puntos sobre la trayecotria estan mas cerca, y a cada parada se genera un pico. Como la trayectoria tiene menos puntos en otros costados del circulo, la trayectoria tiene menos paradas y por lo tanto el trazo es mas uniforme. A parte de esto, la fuerza transversal ejercida sobre el marcador es mayor y esto hace que en cada moviemiento el marcador se pueda vencer la fuerza de friccion estatica con el tablero. Por esto es mas frecuente que el marcador no se mueva cuando los trazos son cortos.
+Radio:
+Homogeneidad de todos los trazos:
+
