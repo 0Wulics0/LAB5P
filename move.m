@@ -12,7 +12,5 @@ function move(Mov,Robot,l,msg,cliente)
 %    xlim([-20,20])
 %    ylim([-20,20])
 %    Robot.plot(thetas(2,:),'notiles','noname')
-     end
-   
-   
+     end 
 end
