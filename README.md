@@ -174,6 +174,8 @@ Letras:
 
 https://vimeo.com/766188835
 
+![imagen](https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png)
+
 Calidad del trazo:
 La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientacion respecto al piso.
 
