@@ -4,7 +4,7 @@ if(expo == 1)
     a=sub.LatestMessage.Position;
     a(5)=[];
     a=Robot.fkine(a);
-    a2=Robot.fkine([0.0767,1.1403,1.9379,-1.5289]);%cambiar por posicion sobre el tablero
+    a2=Robot.fkine([0.0511,1.1863,2.1578,-1.7999]);%cambiar por posicion sobre el tablero
     n=20;
     
     a1=transl(0,0,10)*a2;
@@ -23,27 +23,27 @@ if(expo == 1)
 %     a8=transl(5,5,0)*a7;
 %     a9=transl(5,5,5)*a8;
    
-     a = a2;
-    c = 2;
-     a1=transl(0,0,0)*a;
+%     a = a2;
+    c = 1;
+%     a1=transl(0,0,0)*a;
     a2=transl(0,2*c,0)*a1;
     a3=transl(c,0,0)*a2;
     a4=transl(0,-2*c,0)*a3;
-    a5=transl(0,0,3)*a4;
+    a5=transl(0,0,c)*a4;
     a6=transl(-c,c,0)*a5;
-    a7=transl(0,0,-3)*a6;
+    a7=transl(0,0,-c)*a6;
     a8=transl(c,0,0)*a7;
     %a9=transl(5,5,5)*a8;
    
-    a9 =  transl(0,0,3)*a8
+    a9 =  transl(0,0,c)*a8
     a10 = transl(c,-c,0)*a9
-    a11 =transl(0,0,-3)*a10
+    a11 =transl(0,0,-c)*a10
     a12 = transl(0,2*c,0)*a11
     a13 = transl(c,0,0)*a12
     a14 = transl(0,-2*c,0)*a13
-    a15 = transl(0,0,3)*a14
+    a15 = transl(0,0,c)*a14
     a16 = transl(0,2*c,0)*a15
-    a17 = transl(0,0,-3)*a16
+    a17 = transl(0,0,-c)*a16
     a18 = transl(c,0,0)*a17
     a19 = transl(0,-2*c,0)*a18
     a20 = transl(0,0,10)*a19
@@ -64,9 +64,9 @@ if(expo == 1)
     Mov2 = cat(3,  ctraj(a,a1,n),ctraj(a1,a2,n),ctraj(a2,a3,n),ctraj(a3,a4,n),...
     ctraj(a4,a5,n), ctraj(a5,a6,n), ctraj(a6,a7,n), ctraj(a7,a8,n), ctraj(a8,a9,n),  ...
     ctraj(a9,a10,n),  ctraj(a10,a11,n),  ctraj(a11,a12,n),  ctraj(a12,a13,n),  ctraj(a13,a14,n), ctraj(a14, a15, n),...
-    ctraj(a15,a16,n),  ctraj(a16,a17,n),  ctraj(a17,a18,n), ctraj(a18,a19,n), ctraj(a19,a20,n), ctraj(a20,a1,n), Mova);
-    Mov = cat(3,Mov,Mov2);
-    sz = size(Mov);
+    ctraj(a15,a16,n),  ctraj(a16,a17,n),  ctraj(a17,a18,n), ctraj(a18,a19,n), ctraj(a19,a20,n), ctraj(a20,a1,n), ctraj(a1,a,n));
+    Mov = cat(3,Mov,Mov2)
+    sz = size(Mov)
     for i=1:sz(3)
        thetas = InverseKinematics(Robot,l,Mov(:,:,i));
        movePX(msg,cliente,thetas, false);

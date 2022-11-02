@@ -38,7 +38,7 @@ function lineasParalelas(msg,sub,cliente,Robot,l, expo)
         MoveAcercarZ3 = cat(3,ctraj(a7,a8,n));
         move(MoveAcercarZ3,Robot,l,msg,cliente);
         
-        MovLinea3 = cat(3, ctraj(a8,a9,n0),ctraj(a9,a10,n0));
+        MovLinea3 = cat(3, ctraj(a8,a9,n0),ctraj(a9,a10,n0),ctraj(a10,a,n));
         move(MovLinea3,Robot,l,msg,cliente);        
     else
         Alerta = 'El sistema no tiene marcador';

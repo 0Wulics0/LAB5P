@@ -40,7 +40,7 @@ dibujoLibre(msg,Sub,cliente,Robot,l,expo);
     case 'let'
 letras(msg,Sub,cliente,Robot,l, expo);
     case 'p'
-punto(msg,Sub,cliente,Robot,l, expo);
+letras(msg,Sub,cliente,Robot,l, expo);
 end
 end
 

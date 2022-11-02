@@ -15,7 +15,7 @@ if (expo==1)
     c = 0.1;
     a1=transl(0,0,0)*a;
     a2=transl(c,0,0)*a1;
-    Mov =cat(3, Mov, ctraj(a,a1,n),ctraj(a1,a2,n));
+    Mov =cat(3, Mov, ctraj(a,a1,n),ctraj(a1,a2,n))
    
     for i = 1:4
     a11 =transl(0,0,5)*Mov(:,:,end);
