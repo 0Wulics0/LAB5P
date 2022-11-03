@@ -204,7 +204,11 @@ Se habla de curvatura en vez de rectitud por ser un circulo. Se obseva que la cu
 
 Radio:
 
-Homogeneidad de todos los trazos:
+Homogeneidad de todos los trazos: 
+
+### Ejecución de todos los métodos por script principal
+Se ejecutan todos los métodos de dibujo disponibles y se verifica que no se ejecuten y se informe si se está o no sosteniendo el marcador.
+[Ejecución](https://drive.google.com/file/d/1UGyeq4VhDznNy77IzjoUxrAqAJl0bPfN/view?usp=sharing)
 
 ### Conclusiones
 
