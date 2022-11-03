@@ -218,4 +218,4 @@ Matlab facilita la manipulacion del robot por medio de permitir el envio de coma
 
 La precision con la que el robot se comporte a comparacion del comportamiento simulado ideal depende de factores fisicos del robot, como la rigidez de sus eslabones, las fuerzas externas asociadas al proceso y la interfaz que lo controla (esto ultimo respecto al envio de valores de articulacion discontinuo desde Matlab). Esta precisision determina la calidad con la que lleva a cabo su funcion, pues como se evidencio, la desviacion entre trayectorias ideales y reales puede ser significativa.
 
-
+Hey
