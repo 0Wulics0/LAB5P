@@ -192,10 +192,10 @@ https://youtu.be/AzzmrknuZgA
 
 
 #### Letras:
+
 https://vimeo.com/766188835
 
-![imagen](https://user-images.githubusercontent.com/37639887/199885531-aece1442-4679-438d-8074-366dcd74a5ee.png)
-
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199885531-aece1442-4679-438d-8074-366dcd74a5ee.png" align="center" width="300"></a>
 
 <a href="url"><img src="https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png" align="center" width="300"></a>
 
@@ -205,12 +205,20 @@ https://vimeo.com/766188835
 
 ### Verificacion y analisis dimensional
 
+
+
 #### Arcos:
 
 Calidad del trazo:
-Rectitud:
+Se observa una buena calidad del trazo en el arco exterior. En el arco interior, el robot cambia e altura, por lo que el trazo no es continuo. Al hacer solo el movimiento de la articulacion 1, este trazo es muy uniforme.
+
+Radio (curvatura):
+La curvatrua es perfecta por que solo se esta moviendo una articulacion.
+
 Homogeneidad de todos los trazos: 
-Error porcentual = 
+Hay total homogeneidad en el arco externo. En el interno se observa que no pinta aveces, pero en cuanto al trazo hecho, es muy homogeneo. 
+
+Error porcentual = 0.2%
 
 #### Circulo:
  
@@ -280,15 +288,28 @@ Error porcentual = 7.7%
 #### Letras:
 
 Calidad del trazo:
+En este punto el marcador ha gastado mucha tinta y se comienza a desvanecer. El trazo es segmentado y curvo en ocasiones. Esta desviacion se da por la deflexion de las articulaciones al doblar por una esquina y al hacer el movimiento de alejarse del tablero.
+
+Rectitud:
+Se aprecia recitud en la mayoria de los trazos pero se ve afectada por la deflexion de nuevo. En los casos mas severos, se ve una curva en vez de una recta.
+
+Homogeneidad de todos los trazos: 
+Hay homogeneidad en la intensidad y tipo de errores en la escritura de ambas letras.
+
+Error porcentual = 10.98%
+
+#### 3 Lineas rectas:
+
+Calidad del trazo:
 
 
 Rectitud:
-
+Solo en el trazo de mas inferior y superior se observa rectitud. En los demas se ve desvioacion debido a la deflexion.
 
 Homogeneidad de todos los trazos: 
+Los trazos se hacen con similar intensidad y ancho. La heterogeneidad viene de las trayectorias curvas ocasiondas por la flexibilidad del robot.
 
-
-Error porcentual = 
+Error porcentual = 5.8%
 
 ### Ejecución de todos los métodos por script principal
 
