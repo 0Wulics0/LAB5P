@@ -151,10 +151,10 @@ end
 
 #### Dejar marcador
 
-
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/200025472-2b09fdee-b9cf-4c65-ac82-6c2e4c5cea00.png" align="center" width="300"></a>
 
 #### Area de trabajo - Arcos
-
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/200025330-3c7329ad-723b-4679-afe8-1711672faadd.png" align="center" width="300"></a>
 
 
 #### Circulo:
