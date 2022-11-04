@@ -143,7 +143,6 @@ letras(msg,Sub,cliente,Robot,l, expo);
 end
 end
 ```
-%### Verificacion dimensional y Ejemplos de funcionamiento
 ### Resultados
 
 #### Cojer marcador
@@ -178,6 +177,9 @@ https://vimeo.com/766193604/0d1a37a9da
 
 ![imagen](https://user-images.githubusercontent.com/37639887/199302975-d9df2527-5c06-4a43-abc4-1566efbe6d49.png)
 
+![imagen](https://user-images.githubusercontent.com/37639887/199863002-8114f6a2-5d66-4a45-92a1-7dd2acfb256c.png)
+
+
 #### Triangulo:
 
 https://youtu.be/AzzmrknuZgA
@@ -207,7 +209,9 @@ Radio:
 Homogeneidad de todos los trazos: 
 
 ### Ejecución de todos los métodos por script principal
+
 Se ejecutan todos los métodos de dibujo disponibles y se verifica que no se ejecuten y se informe si se está o no sosteniendo el marcador.
+
 [Ejecución](https://drive.google.com/file/d/1UGyeq4VhDznNy77IzjoUxrAqAJl0bPfN/view?usp=sharing)
 
 ### Conclusiones
@@ -217,5 +221,3 @@ Ros, junto a modelos de cinematica inversa y directa, permite controlar los movi
 Matlab facilita la manipulacion del robot por medio de permitir el envio de comandos en ROS, creacion de trayectorias y simulacion de movimientos del robot dentro de su lenguaje. Esto hace que no requiramos al robot para verificar que la trayectoria programada sera correctamente ejecutada y tambien disminuye el riesgo que representa probar un programa ciegamente en el robot, pues este puede hacer ocasionar que realice movimientos bruscos y se dane.
 
 La precision con la que el robot se comporte a comparacion del comportamiento simulado ideal depende de factores fisicos del robot, como la rigidez de sus eslabones, las fuerzas externas asociadas al proceso y la interfaz que lo controla (esto ultimo respecto al envio de valores de articulacion discontinuo desde Matlab). Esta precisision determina la calidad con la que lleva a cabo su funcion, pues como se evidencio, la desviacion entre trayectorias ideales y reales puede ser significativa.
-
-Hey
