@@ -204,6 +204,13 @@ https://vimeo.com/766188835
 
 ### Verificacion y analisis dimensional
 
+#### Arcos:
+
+Calidad del trazo:
+Rectitud:
+Homogeneidad de todos los trazos: 
+Error porcentual = 
+
 #### Circulo:
  
 Calidad del trazo:
@@ -234,9 +241,53 @@ Rectitud:
 En los trazos final e inicial rectos se ve gran rectitud. Principalmente en el ultimo, antes de la deflexion antes mencionada. En el inicial, el tramo que se pudo dibujar es corto y recto pero se puede ver que antes de este trazo el robot hace una trayectoria curva que no pinta. Esta hubiese sido otro trazo errado por deflexion durante la aproximacion del robot al tablero.
 
 Radio: 
-Evidentemente se puede ver que la primera mitad del semicirculo se dibujo como una recta. Esto sucede por lo explicado anteriormente 
+Evidentemente se puede ver que la primera mitad del semicirculo se dibujo como una recta. Esto sucede porque en esta ocasion el marcador estaba muy presionado contra el tablero, lo cual hizo que cuando se movian las articulaciones, los eslabones se deflectaran por la presion contra el piso, y por esto no pudo seguir la trayectoria curva.
+En la mitad del circulo, el robot logra hacer la curvatura.
+En la segunda mitad del circulo, el robot no logra hacerla por el mismo efecto y por el trazo puntiagudo explicado anteriormente.
+
+Homogeneidad de todos los trazos: 
+Se ve el mismo efecto explicado antes causado por la forma rectangular de la punta del marcador y ademas se tiene que al principio no se dibuja porque el marcador no suelta tinta debido a un residuo sobre el tablero.
 
 Error porcentual = 6.6%
+
+#### 5 puntos equidistantes:
+
+Calidad del trazo:
+Es buena, solo se observa el efecto de trazo errado por deflexion.
+
+Rectitud:
+No deberia dibujarse una linea en este caso, pero por el efecto mencionado anteriormente, se generan las lineas rectas cuando el robot se aleja de la posicion.
+
+Homogeneidad de todos los trazos: 
+Esta vez los trazos son totalmente homogeneos. solo difieren en la longitud por deflexiones distintas en distintas poses.
+
+Error porcentual = 12.7%
+
+#### Triangulo:
+
+Calidad del trazo:
+Se observa que el trazo tiene el efecto discreto del que se hablo antes por la comunicacion con matlab. Este se engrandece porque el numero de pasos utilizado fue mucho menor al utilizado antes (20).
+
+Rectitud:
+En promedio, el trazo es muy recto, como se ve por la trayectoria aproximada. Los trazos individuales reales tambien son muy rectos debido a los movimientos discretos del robot.
+
+Homogeneidad de todos los trazos: 
+Dos aristas tienen trazos con patrones muy similares escalonados. La otra tiende a tener trazos mas rectos. Esto sucde por la orientacion de las aristias respecto al robot. La arista mas recta se encontraba de manera que principalmente solo se debiera mover 1a articulacion 1 para dibujarla. Para los trazos escalonados se debieron utilizar 2, y su moviemiento discreto ocasiono el escalonamiento.
+
+Error porcentual = 7.7%
+
+#### Letras:
+
+Calidad del trazo:
+
+
+Rectitud:
+
+
+Homogeneidad de todos los trazos: 
+
+
+Error porcentual = 
 
 ### Ejecución de todos los métodos por script principal
 
