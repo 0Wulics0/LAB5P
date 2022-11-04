@@ -219,47 +219,50 @@ https://vimeo.com/766188835
 #### Arcos:
 
 Calidad del trazo:
-Se observa una buena calidad del trazo en el arco exterior. En el arco interior, el robot cambia e altura, por lo que el trazo no es continuo. Al hacer solo el movimiento de la articulacion 1, este trazo es muy uniforme.
+Se observa una buena calidad del trazo en el arco exterior. En el arco interior, el robot cambia e altura, por lo que el trazo no es continuo. Al hacer solo el movimiento de la articulación 1, este trazo es muy uniforme.
 
 Radio (curvatura):
-La curvatrua es perfecta por que solo se esta moviendo una articulacion.
+La curvatura es perfecta por que solo se esta moviendo una articulación.
 
 Homogeneidad de todos los trazos: 
-Hay total homogeneidad en el arco externo. En el interno se observa que no pinta aveces, pero en cuanto al trazo hecho, es muy homogeneo. 
+Hay total homogeneidad en el arco externo. En el interno se observa que no pinta aveces, pero en cuanto al trazo hecho, es muy homogéneo. 
 
 Error porcentual = 0.2%
+
+
 
 #### Circulo:
  
 Calidad del trazo:
-La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientacion respecto al piso.
+La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientación respecto al piso.
  
 Radio (curvatura):
-Se habla de curvatura en vez de rectitud por ser un circulo. Se obseva que la curvatura no es constante. En particular se observa que hay menor calidad de la curvatura cuando la distancia entre puntos a moverse disminuye. Esta disminucion de calidad se ve como trazos poco uniformes con irregularidades puntiagudas y mayor desviacion general respecto a la curvatura solicitada. La razon de que sean mas erraticos es que hay mas paradas cuando los puntos sobre la trayecotria estan mas cerca, y a cada parada se genera un pico. Como la trayectoria tiene menos puntos en otros costados del circulo, la trayectoria tiene menos paradas y por lo tanto el trazo es mas uniforme. A parte de esto, la fuerza transversal ejercida sobre el marcador es mayor y esto hace que en cada moviemiento el marcador se pueda vencer la fuerza de friccion estatica con el tablero. Por esto es mas frecuente que el marcador no se mueva cuando los trazos son cortos.
+Se habla de curvatura en vez de rectitud por ser un circulo. Se observa que la curvatura no es constante. En particular se observa que hay menor calidad de la curvatura cuando la distancia entre puntos a moverse disminuye. Esta disminución de calidad se ve como trazos poco uniformes con irregularidades puntiagudas y mayor desviación general respecto a la curvatura solicitada. La razón de que sean mas erráticos es que hay mas paradas cuando los puntos sobre la trayectoria estan mas cerca, y a cada parada se genera un pico. Como la trayectoria tiene menos puntos en otros costados del circulo, la trayectoria tiene menos paradas y por lo tanto el trazo es mas uniforme. A parte de esto, la fuerza transversal ejercida sobre el marcador es mayor y esto hace que en cada movimiento el marcador se pueda vencer la fuerza de fricción estática con el tablero. Por esto es mas frecuente que el marcador no se mueva cuando los trazos son cortos.
 
 Homogeneidad de todos los trazos: 
 
-El trazo es homogeneo en intensidad, sin embargo cambia amedida que el marcador cambia su trayectoria, pues la punta de este es cuadrada, por lo que comienza con un trazo un poco mas delgado.
+El trazo es homogéneo en intensidad, sin embargo cambia a medida que el marcador cambia su trayectoria, pues la punta de este es cuadrada, por lo que comienza con un trazo un poco mas delgado.
 
 
-Como medida para definir la presicion del trazo se decide crear la siguiente medida:
+Como medida para definir la precisión del trazo se decide crear la siguiente medida:
 
 ```Error porcentual = (maxima distancia entre el trazo y la trayectoria real / maxima longitud del dibujo) x 100 ```
 
 Para el circulo se tubo un error porcentual de 16%.
 
 
+
 #### Dibujo libre:
 
 Calidad del trazo:
-Al principo no hay trao porque el marcador no se logra ubicar correctamente sobre el tablero. Despues de esto se obtiene un trazo uniforme pero se notan sobre el unos segmentos (eso se ve en la porcion que corresponde al medio criculo) que vienen de los pequenos pasos con los que se hizo el trazo. Cuando va a dibujar la siguiente mitad del semi ciruclo, el comportamiento anterior cammbia y se tiene una fuerte discontinuidad cuadrada producto. Estas se deben a que el robot, al ser controlado por Matlab, no hace el cambio de sus angulos simulataneamente para todas las articulaciones, sino que lo hace una a una, causando que en el tablero queden plasmados los trazos correspondientes a cuando se movio cada articulacion.
-Finalmente se ve un comportamiento uniforme en el trazo final recto. Una vez termina este trayecto, el robot comienza a alejarse y este cambio se ve en el punto de deflexion de esta linea recta. Esto sucede porque el robot sigue en contacto con el talbero al comenzar a alejarse por que sus articulaciones se deflectan por ser de plastico y deben soportar el peso del robot. Este fenomeno lo llamaremos trazo errado por deflexion.
+Al principio no hay trazo porque el marcador no se logra ubicar correctamente sobre el tablero. Después de esto se obtiene un trazo uniforme pero se notan sobre el unos segmentos (eso se ve en la porción que corresponde al medio circuló) que vienen de los pequeños pasos con los que se hizo el trazo. Cuando va a dibujar la siguiente mitad del semi círculo, el comportamiento anterior cambia y se tiene una fuerte discontinuidad cuadrada producto. Estas se deben a que el robot, al ser controlado por Matlab, no hace el cambio de sus ángulos simultáneamente para todas las articulaciones, sino que lo hace una a una, causando que en el tablero queden plasmados los trazos correspondientes a cuando se movió cada articulación.
+Finalmente, se ve un comportamiento uniforme en el trazo final recto. Una vez termina este trayecto, el robot comienza a alejarse y este cambio se ve en el punto de deflexión de esta línea recta. Esto sucede porque el robot sigue en contacto con el tablero al comenzar a alejarse porque sus articulaciones se reflectan por ser de plástico y deben soportar el peso del robot. Este fenómeno lo llamaremos trazo errado por deflexión.
 
 Rectitud:
-En los trazos final e inicial rectos se ve gran rectitud. Principalmente en el ultimo, antes de la deflexion antes mencionada. En el inicial, el tramo que se pudo dibujar es corto y recto pero se puede ver que antes de este trazo el robot hace una trayectoria curva que no pinta. Esta hubiese sido otro trazo errado por deflexion durante la aproximacion del robot al tablero.
+En los trazos final e inicial rectos se ve gran rectitud. Principalmente en el ultimo, antes de la deflexión antes mencionada. En el inicial, el tramo que se pudo dibujar es corto y recto pero se puede ver que antes de este trazo el robot hace una trayectoria curva que no pinta. Esta hubiese sido otro trazo errado por deflexión durante la aproximación del robot al tablero.
 
 Radio: 
-Evidentemente se puede ver que la primera mitad del semicirculo se dibujo como una recta. Esto sucede porque en esta ocasion el marcador estaba muy presionado contra el tablero, lo cual hizo que cuando se movian las articulaciones, los eslabones se deflectaran por la presion contra el piso, y por esto no pudo seguir la trayectoria curva.
+Evidentemente se puede ver que la primera mitad del semicírculo se dibujo como una recta. Esto sucede porque en esta ocasión el marcador estaba muy presionado contra el tablero, lo cual hizo que cuando se movían las articulaciones, los eslabones se deflectarán por la presión contra el piso, y por esto no pudo seguir la trayectoria curva.
 En la mitad del circulo, el robot logra hacer la curvatura.
 En la segunda mitad del circulo, el robot no logra hacerla por el mismo efecto y por el trazo puntiagudo explicado anteriormente.
 
@@ -268,44 +271,49 @@ Se ve el mismo efecto explicado antes causado por la forma rectangular de la pun
 
 Error porcentual = 6.6%
 
+
 #### 5 puntos equidistantes:
 
 Calidad del trazo:
-Es buena, solo se observa el efecto de trazo errado por deflexion.
+Es buena, solo se observa el efecto de trazo errado por deflexión.
 
 Rectitud:
-No deberia dibujarse una linea en este caso, pero por el efecto mencionado anteriormente, se generan las lineas rectas cuando el robot se aleja de la posicion.
+No debería dibujarse una línea en este caso, pero por el efecto mencionado anteriormente, se generan las líneas rectas cuando el robot se aleja de la posición.
 
 Homogeneidad de todos los trazos: 
-Esta vez los trazos son totalmente homogeneos. solo difieren en la longitud por deflexiones distintas en distintas poses.
+Esta vez los trazos son totalmente homogéneos. solo difieren en la longitud por deflexiones distintas en distintas poses.
 
 Error porcentual = 12.7%
+
 
 #### Triangulo:
 
 Calidad del trazo:
-Se observa que el trazo tiene el efecto discreto del que se hablo antes por la comunicacion con matlab. Este se engrandece porque el numero de pasos utilizado fue mucho menor al utilizado antes (20).
+Se observa que el trazo tiene el efecto discreto del que se habló antes por la comunicación con matlab. Este se engrandece porque el número de pasos utilizados fue mucho menor al utilizado antes (20).
 
 Rectitud:
-En promedio, el trazo es muy recto, como se ve por la trayectoria aproximada. Los trazos individuales reales tambien son muy rectos debido a los movimientos discretos del robot.
+En promedio, el trazo es muy recto, como se ve por la trayectoria aproximada. Los trazos individuales reales también son muy rectos debido a los movimientos discretos del robot.
 
 Homogeneidad de todos los trazos: 
-Dos aristas tienen trazos con patrones muy similares escalonados. La otra tiende a tener trazos mas rectos. Esto sucde por la orientacion de las aristias respecto al robot. La arista mas recta se encontraba de manera que principalmente solo se debiera mover 1a articulacion 1 para dibujarla. Para los trazos escalonados se debieron utilizar 2, y su moviemiento discreto ocasiono el escalonamiento.
+Dos aristas tienen trazos con patrones muy similares escalonados. La otra tiende a tener trazos más rectos. Esto sucede por la orientación de las aristas respecto al robot. La arista más recta se encontraba de manera que principalmente solo se debiera mover 1a articulación 1 para dibujarla. Para los trazos escalonados se debieron utilizar 2, y su movimiento discreto ocasiono el escalonamiento.
 
 Error porcentual = 7.7%
+
+
 
 #### Letras:
 
 Calidad del trazo:
-En este punto el marcador ha gastado mucha tinta y se comienza a desvanecer. El trazo es segmentado y curvo en ocasiones. Esta desviacion se da por la deflexion de las articulaciones al doblar por una esquina y al hacer el movimiento de alejarse del tablero.
+En este punto el marcador ha gastado mucha tinta y se comienza a desvanecer. El trazo es segmentado y curvo en ocasiones. Esta desviación se da por la deflexión de las articulaciones al doblar por una esquina y al hacer el movimiento de alejarse del tablero.
 
 Rectitud:
-Se aprecia recitud en la mayoria de los trazos pero se ve afectada por la deflexion de nuevo. En los casos mas severos, se ve una curva en vez de una recta.
+Se aprecia rectitud en la mayoría de los trazos, pero se ve afectada por la deflexión de nuevo. En los casos más severos, se ve una curva en vez de una recta.
 
 Homogeneidad de todos los trazos: 
 Hay homogeneidad en la intensidad y tipo de errores en la escritura de ambas letras.
 
 Error porcentual = 10.98%
+
 
 #### 3 Lineas rectas:
 
@@ -313,22 +321,25 @@ Calidad del trazo:
 
 
 Rectitud:
-Solo en el trazo de mas inferior y superior se observa rectitud. En los demas se ve desvioacion debido a la deflexion.
+Solo en el trazo de mas inferior y superior se observa rectitud. En los demas se ve desviación debido a la deflexión.
 
 Homogeneidad de todos los trazos: 
-Los trazos se hacen con similar intensidad y ancho. La heterogeneidad viene de las trayectorias curvas ocasiondas por la flexibilidad del robot.
+Los trazos se hacen con similar intensidad y ancho. La heterogeneidad viene de las trayectorias curvas ocasionadas por la flexibilidad del robot.
+
 
 Error porcentual = 5.8%
 
 ### Ejecución de todos los métodos por script principal
 
 Se ejecutan todos los métodos de dibujo disponibles y se verifica que no se ejecuten y se informe si se está o no sosteniendo el marcador.
+
 [Ejecución](https://drive.google.com/file/d/1UGyeq4VhDznNy77IzjoUxrAqAJl0bPfN/view?usp=sharing)
 
 ### Conclusiones
 
-Ros, junto a modelos de cinematica inversa y directa, permite controlar los movimientos de un robot por medio de python y/o Matlab con suficiente precision como para recorrer trayectorias complejas.
+Ros, junto a modelos de cinemática inversa y directa, permite controlar los movimientos de un robot por medio de python y/o Matlab con suficiente precisión como para recorrer trayectorias complejas.
 
-Matlab facilita la manipulacion del robot por medio de permitir el envio de comandos en ROS, creacion de trayectorias y simulacion de movimientos del robot dentro de su lenguaje. Esto hace que no requiramos al robot para verificar que la trayectoria programada sera correctamente ejecutada y tambien disminuye el riesgo que representa probar un programa ciegamente en el robot, pues este puede hacer ocasionar que realice movimientos bruscos y se dane.
+Matlab facilita la manipulación del robot por medio de permitir el envió de comandos en ROS, creación de trayectorias y simulación de movimientos del robot dentro de su lenguaje. Esto hace que no requiramos al robot para verificar que la trayectoria programada sera correctamente ejecutada y tambien disminuye el riesgo que representa probar un programa ciegamente en el robot, pues este puede hacer ocasionar que realice movimientos bruscos y se dañe.
 
-La precision con la que el robot se comporte a comparacion del comportamiento simulado ideal depende de factores fisicos del robot, como la rigidez de sus eslabones, las fuerzas externas asociadas al proceso y la interfaz que lo controla (esto ultimo respecto al envio de valores de articulacion discontinuo desde Matlab). Esta precisision determina la calidad con la que lleva a cabo su funcion, pues como se evidencio, la desviacion entre trayectorias ideales y reales puede ser significativa.
+La precisión con la que el robot se comporte a comparación del comportamiento simulado ideal depende de factores físicos del robot, como la rigidez de sus eslabones, las fuerzas externas asociadas al proceso y la interfaz que lo controla (esto ultimo respecto al envió de valores de articulación discontinuo desde Matlab). Esta precisión determina la calidad con la que lleva a cabo su función, pues como se evidencio, la desviación entre trayectorias ideales y reales puede ser significativa.
+
