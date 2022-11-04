@@ -159,11 +159,11 @@ end
 
 #### Circulo:
 
-<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png" align="center" width="200"></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png" align="center" width="300"></a>
 <a href="url"><img src="[https://user-images.githubusercontent.com/37639887/199257976-5ebed1d9-9e56-4b7b-afc1-40b2eaee007d.png](https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png)" align="left" width="200"></a>
-<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png" align="center" width="200"></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199275820-6bf9ce4f-b968-4602-a50b-2f30c12d7399.png" align="center" width="300"></a>
 
-<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png" align="center" width="200"></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199260755-5ebc99d6-d986-403d-a220-bdb5f90a794f.png" align="center" width="300"></a>
 
 
 #### Dibujo libre:
@@ -178,16 +178,16 @@ https://vimeo.com/765787944/217f9d7aa3
 
 https://vimeo.com/766193604/0d1a37a9da
 
-![imagen](https://user-images.githubusercontent.com/37639887/199302975-d9df2527-5c06-4a43-abc4-1566efbe6d49.png)
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199302975-d9df2527-5c06-4a43-abc4-1566efbe6d49.png" align="center" width="300"></a>
 
-![imagen](https://user-images.githubusercontent.com/37639887/199863002-8114f6a2-5d66-4a45-92a1-7dd2acfb256c.png)
-
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199863002-8114f6a2-5d66-4a45-92a1-7dd2acfb256c.png" align="center" width="300"></a>
 
 #### Triangulo:
 
 https://youtu.be/AzzmrknuZgA
 
-![imagen](https://user-images.githubusercontent.com/37639887/199311543-c28bedf7-407c-419f-bd75-0581c7428adc.png)
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199311543-c28bedf7-407c-419f-bd75-0581c7428adc.png" align="center" width="300"></a>
+
 
 #### Letras:
 
