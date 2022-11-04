@@ -4,6 +4,13 @@
 ## Daniel Melo
 
 ## Camilo Andrés Martín Moreno
+
+
+### Introduccion
+En el siguiente archivo se muestra como se realizo el laboraotrio 5. El video de la practica es [este](https://drive.google.com/file/d/1UGyeq4VhDznNy77IzjoUxrAqAJl0bPfN/view?usp=sharing).
+ 
+
+
 ### Caracterización del manipulador
 Inicialmente es necesario dimensionar el manipulador a fin de determinar las longitudes de sus eslabones y ángulos entre sus articulaciones para
 obtener los parámetros DH y de esta manera tener la capacidad de realizar las simulaciones correspondientes a todas las trayectorias recorridas por el
