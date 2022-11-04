@@ -171,7 +171,9 @@ end
 https://vimeo.com/766188835
 https://vimeo.com/765787944/217f9d7aa3
 
-![imagen](https://user-images.githubusercontent.com/37639887/199278992-221b0d9d-c376-41e2-a818-15a14539d1af.png)
+
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199278992-221b0d9d-c376-41e2-a818-15a14539d1af.png" align="center" width="300"></a>
+
 ![imagen](https://user-images.githubusercontent.com/37639887/199278696-05ff639b-c6fc-45bf-875b-76047331ebe2.png)
 
 #### 5 puntos equidistantes:
@@ -193,7 +195,8 @@ https://youtu.be/AzzmrknuZgA
 
 https://vimeo.com/766188835
 
-![imagen](https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png width="48")
+
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png" align="center" width="300"></a>
 
 #### 3 Lineas rectas
 
@@ -201,20 +204,43 @@ https://vimeo.com/766188835
 
 ### Verificacion y analisis dimensional
 
+#### Circulo:
+ 
 Calidad del trazo:
 La calidad del trazo en este caso fue buena porque hubo contacto constante de la punta del marcador con el suelo y el robot no causo que la punta cambiara de orientacion respecto al piso.
-
-Rectitud (curvatura):
+ 
+Radio (curvatura):
 Se habla de curvatura en vez de rectitud por ser un circulo. Se obseva que la curvatura no es constante. En particular se observa que hay menor calidad de la curvatura cuando la distancia entre puntos a moverse disminuye. Esta disminucion de calidad se ve como trazos poco uniformes con irregularidades puntiagudas y mayor desviacion general respecto a la curvatura solicitada. La razon de que sean mas erraticos es que hay mas paradas cuando los puntos sobre la trayecotria estan mas cerca, y a cada parada se genera un pico. Como la trayectoria tiene menos puntos en otros costados del circulo, la trayectoria tiene menos paradas y por lo tanto el trazo es mas uniforme. A parte de esto, la fuerza transversal ejercida sobre el marcador es mayor y esto hace que en cada moviemiento el marcador se pueda vencer la fuerza de friccion estatica con el tablero. Por esto es mas frecuente que el marcador no se mueva cuando los trazos son cortos.
 
-Radio:
-
 Homogeneidad de todos los trazos: 
+
+El trazo es homogeneo en intensidad, sin embargo cambia amedida que el marcador cambia su trayectoria, pues la punta de este es cuadrada, por lo que comienza con un trazo un poco mas delgado.
+
+
+Como medida para definir la presicion del trazo se decide crear la siguiente medida:
+
+```Error porcentual = (maxima distancia entre el trazo y la trayectoria real / maxima longitud del dibujo) x 100 ```
+
+Para el circulo se tubo un error porcentual de 16%.
+
+
+#### Dibujo libre:
+
+Calidad del trazo:
+Al principo no hay trao porque el marcador no se logra ubicar correctamente sobre el tablero. Despues de esto se obtiene un trazo uniforme pero se notan sobre el unos segmentos (eso se ve en la porcion que corresponde al medio criculo) que vienen de los pequenos pasos con los que se hizo el trazo. Cuando va a dibujar la siguiente mitad del semi ciruclo, el comportamiento anterior cammbia y se tiene una fuerte discontinuidad cuadrada producto. Estas se deben a que el robot, al ser controlado por Matlab, no hace el cambio de sus angulos simulataneamente para todas las articulaciones, sino que lo hace una a una, causando que en el tablero queden plasmados los trazos correspondientes a cuando se movio cada articulacion.
+Finalmente se ve un comportamiento uniforme en el trazo final recto. Una vez termina este trayecto, el robot comienza a alejarse y este cambio se ve en el punto de deflexion de esta linea recta. Esto sucede porque el robot sigue en contacto con el talbero al comenzar a alejarse por que sus articulaciones se deflectan por ser de plastico y deben soportar el peso del robot. Este fenomeno lo llamaremos trazo errado por deflexion.
+
+Rectitud:
+En los trazos final e inicial rectos se ve gran rectitud. Principalmente en el ultimo, antes de la deflexion antes mencionada. En el inicial, el tramo que se pudo dibujar es corto y recto pero se puede ver que antes de este trazo el robot hace una trayectoria curva que no pinta. Esta hubiese sido otro trazo errado por deflexion durante la aproximacion del robot al tablero.
+
+Radio: 
+Evidentemente se puede ver que la primera mitad del semicirculo se dibujo como una recta. Esto sucede por lo explicado anteriormente 
+
+Error porcentual = 6.6%
 
 ### Ejecución de todos los métodos por script principal
 
 Se ejecutan todos los métodos de dibujo disponibles y se verifica que no se ejecuten y se informe si se está o no sosteniendo el marcador.
-
 [Ejecución](https://drive.google.com/file/d/1UGyeq4VhDznNy77IzjoUxrAqAJl0bPfN/view?usp=sharing)
 
 ### Conclusiones
