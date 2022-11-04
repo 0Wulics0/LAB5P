@@ -149,11 +149,15 @@ end
 
 https://youtu.be/NMbualhkjJg
 
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/200025472-2b09fdee-b9cf-4c65-ac82-6c2e4c5cea00.png" align="center" width="300"></a>
+
 #### Dejar marcador
 
 https://youtu.be/Vsqh0AElT7w
 
-<a href="url"><img src="https://user-images.githubusercontent.com/37639887/200025472-2b09fdee-b9cf-4c65-ac82-6c2e4c5cea00.png" align="center" width="300"></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/37639887/200027998-a3915ca7-52c2-477b-a57f-a90f31723417.png" align="center" width="300"></a>
+
+
 
 #### Area de trabajo - Arcos
 
