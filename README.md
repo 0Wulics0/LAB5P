@@ -190,7 +190,7 @@ https://youtu.be/AzzmrknuZgA
 
 https://vimeo.com/766188835
 
-![imagen](https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png)
+![imagen](https://user-images.githubusercontent.com/37639887/199312702-ec272df2-1030-4ad3-b973-ea523c3aca38.png {width=40px height=400px})
 
 #### 3 Lineas rectas
 
